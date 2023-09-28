@@ -1,0 +1,406 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height:100% ;
+    width: 100%;
+
+}
+nav{
+    height: 200px;
+    width: 100%;
+    /* background-color: brown;   */
+}
+.top{
+    height: 25%;
+    width: 100%; 
+    background-color: rgb(232, 228, 228);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.top_mid h4{
+    text-align: center;
+    font-size: 16px;
+}
+.top_mid h6,.top_right h4{
+    text-align: center;
+    font-size: 14px;
+}
+.home_top h1{
+    font-size: 20px;
+} 
+
+.middle{
+    height:50%;
+    width: 100%;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.middle_mid img{
+    height: 50px;
+}
+.middle_left .icon{
+    display: flex;
+    gap: 30px;
+    justify-content:flex-end;
+}
+.icon img{
+    height: 20px;
+}
+.bottom{
+    height: 25%;
+    width: 100%;
+    /* background-color: antiquewhite; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.bottom a{
+    text-decoration:none;
+    color: black;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+#home{
+    height: 100%;
+    width: 100%;
+    background-color: blueviolet;
+
+}
+.home_top{
+    height: 50px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* .home_image{
+    height: 100%;
+    width: 100%;
+} */
+.interior_design{
+    padding: 10px;
+    height: 50%;
+    width: 100%;
+    /*background-color: brown;*/
+}
+.interior_design h1{
+    font-family: "cinzel";
+    font-weight: 600;
+    text-align: center;
+}
+.boxes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 25px 80px;
+}
+.box{
+    position: relative;
+    height: 180px;
+    width: 180px;
+    /* background-color: blue; */
+}
+.box img{
+    height: 100%;
+    width: 100%;
+    /* object-fit: cover; */
+    cursor: pointer;
+}
+.boxes .box a{
+    display: none;
+    color: #fff;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    text-align: center;
+}
+.boxes .box:hover a{
+    color: #fff;
+    display: flex;
+    font-size: 20px;
+    z-index: 10;
+}
+.boxes .box::after{
+    position: absolute;
+    content: "";
+    height: 100%;
+    transition: .8s;
+}
+.boxes .box:hover:after{
+    background: #000000eb;
+    width: 100%;
+    text-align: center;
+    z-index: 5;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+.luxury_design{
+    height: 150%;
+    width: 100%;
+    /* background-color: aquamarine; */
+}
+.luxury{
+    height: 10%;
+    width: 100%;
+    /* background-color: blueviolet; */
+    display: flex;
+    justify-content: center;
+    align-items:flex-end;
+}
+ .luxury h1{
+    font-family: "cinzel";
+} 
+.luxury_img{
+    height: 90%; 
+    width: 100%;
+    /* object-fit: cover;  */
+    background-image: url("https://www.marcpridmore.com/wp-content/uploads/2023/02/Screenshot-2023-02-28-at-5.44.31-PM.png"); 
+    background-size: cover; 
+    padding: 0 20px 25px 20px;
+}
+ .design_services{
+    height: 100%;
+    width: 100%;
+    /* background-color: aquamarine; */
+    padding: 0 40px 50px 40px;
+ }
+ .design_services_top{
+    height: 90px;
+    width: 100%;
+    background-color:#fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    padding: 15px 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-transform: uppercase;
+} 
+.design_services_img{
+    height:90%;
+    width: 100%;
+    background-image: url("https://www.marcpridmore.com/wp-content/uploads/2020/11/Interior_Design_Materials.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:center; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.design_services_content{
+    height: 250px;
+    width: 450px;
+    /* background-color:darkcyan; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.design_services_content h3{
+    font-family: "montserrat thin semibold";
+    text-transform: uppercase;
+    font-size: 20px;
+}
+.design_services_content h1{
+    font-family: "playfair display";
+    text-align: center;
+    font-size: 41px;
+}
+.design_services_content p{
+    text-transform: uppercase;
+    font-family: "montserrat thin";
+    font-size: 15px;
+    /* font-weight: 600; */
+}
+.infinite_interior{
+    height: 120%;
+    width: 100%;
+    /* background-color: blueviolet; */
+}
+.container {
+    height: 100%;
+    width: 100%;
+    z-index: 50;
+    text-align: center;
+}
+.content{
+    color: #ffffff;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,50%);
+    font-family: "cinzel";
+}
+.content button {
+    z-index: 100;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: transparent;
+    color: #c5c5c5;
+    border: 1px solid rgb(91, 91, 91);
+    cursor: pointer;
+    border-radius: 5px;
+}
+video {
+    height: 100%;
+    width: 100%;
+    border-radius: 50px;
+}
+.furniture_showroom{
+    height: 100%;
+    width: 100%;
+    /* background-color: aqua; */
+    display: flex;
+}
+.furniture_showroom_image{
+    height: 100%;
+    width: 45%;
+    /* background-color: beige; */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.furniture_showroom_image img{
+   height: 90%;
+   padding-right: 30px;
+}
+.furniture_showroom_content{
+    height: 90%;
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin: 50px 150px 20px 90px;
+    position: relative;
+}
+.furniture_showroom_content h1{
+    font-family: "cinzel medium";
+    font-size: 35px;
+}
+.furniture_showroom_content h2{
+    font-family: "Montserrat thin";
+    font-size: 20px;
+    line-height: 28px;
+    padding-left: 15px;
+}
+.furniture_showroom_content p{
+    font-family: "montserrat thin light";
+    font-size: 16px;
+    line-height: 28px;
+    opacity: .5;
+}
+.furniture_showroom_content button{
+    text-transform: uppercase;
+    background-color: #fff;
+    padding: 10px;
+    border: 2px solid black;
+    font-family: "Montserrat thin";
+}
+.line{
+    height: 118px;
+    border: 1px solid black;
+    position: absolute;
+    top: 112px;
+}
+
+.image{
+    height: 70%;
+    width: 100%;
+    /* background-color: blanchedalmond; */
+}
+.images{
+    height: 85%;
+    width: 100%;
+    display: flex;
+    padding-top: 40px;
+    /* align-items: center; */
+    justify-content: center;
+    gap: 20px;
+}
+.images .img{
+    height: 230px;
+    width: 230px;
+    background-color: black;
+}
+.img1{
+    background-image: url("https://www.marcpridmore.com/wp-content/uploads/sb-instagram-feed-images/384074271_6858047810921592_7642636103016116731_nfull.jpg");
+    background-size: cover;
+}
+.img2{
+    background-image: url("https://scontent-lax3-2.cdninstagram.com/v/t51.29350-15/382272017_282698561241535_2214950561088881001_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=8ae9d6&_nc_ohc=XA2tJzNWRSkAX_AeCSV&_nc_ht=scontent-lax3-2.cdninstagram.com&edm=AM6HXa8EAAAA&oh=00_AfA-uUjRPkGo8KPrXj2vciakoHi2KACT4S_6smohmPYuaA&oe=651A477D");
+    background-size: cover;
+}
+.img3{
+    background-image: url("https://scontent-lax3-1.cdninstagram.com/v/t51.29350-15/381293902_845515870221383_1412228734946995987_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=8ae9d6&_nc_ohc=zE1trAZFrAcAX_SJ5q8&_nc_ht=scontent-lax3-1.cdninstagram.com&edm=AM6HXa8EAAAA&oh=00_AfAsN2ffvS5LZoszH3aCDt9mQizaAhKHSPVAAnt6ASm-2w&oe=651A0B83");
+    background-size:cover;
+}
+.img4{
+    background-image: url("https://scontent-lax3-2.cdninstagram.com/v/t51.29350-15/363910425_6381738891932966_1557846532449208989_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=8ae9d6&_nc_ohc=r_8S0Tbv5WYAX_xMxjI&_nc_ht=scontent-lax3-2.cdninstagram.com&edm=AM6HXa8EAAAA&oh=00_AfDfF_h2BTmlYELsQ7B8Jz0JnLLrWY2Ljx_kQPQsKeqKYw&oe=651A3C08");
+    background-size: cover;
+}
+.bttn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.bttn button{
+    color: white;
+    background-color: royalblue;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+}
+.footer_part{
+    height: 70%;
+    width: 100%;
+    background-color: rgb(41, 40, 40);
+    color: #fff;
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-around;
+    font-family: "Montserrat thin light";
+    font-size: 12px;
+    line-height: 25px;
+    padding-top: 10%;
+}
+.colums ul{
+    list-style: none;
+}
+.colums a{
+    text-decoration: none;
+    color: white;
+}
+.colums h4{
+    font-size: 15px;
+    font-weight: 500;
+}
+input{
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-size:30px;
+}
+.colums button{
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-family: "Montserrat thin";
+    font-size: 15px;
+}
