@@ -70,7 +70,7 @@ nav{
 #home{
     height: 100%;
     width: 100%;
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
 
 }
 .home_top{
@@ -144,8 +144,8 @@ nav{
     position: absolute;
     top: 0;
     left: 0;
-
 }
+
 .luxury_design{
     height: 150%;
     width: 100%;
@@ -179,7 +179,7 @@ nav{
  .design_services_top{
     height: 90px;
     width: 100%;
-    background-color:#fff;
+    /* background-color:#fff; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -238,6 +238,7 @@ button{
     width: 100%;
     z-index: 50;
     text-align: center;
+    position: relative;
 }
 .content{
     color: #ffffff;
@@ -337,6 +338,7 @@ video {
     height: 230px;
     width: 230px;
     background-color: black;
+    /* z-index: 10; */
 }
 .img1{
     background-image: url("https://www.marcpridmore.com/wp-content/uploads/sb-instagram-feed-images/384074271_6858047810921592_7642636103016116731_nfull.jpg");
